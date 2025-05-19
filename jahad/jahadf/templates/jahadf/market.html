@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Market</title>
+</head>
+<body>
+    <h1>Market</h1>
+    <ul>
+        {% for market in markets %}
+            <li>{{ market.name }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Mobiles</h2>
+    <ul>
+        {% for mobile in mobiles %}
+            <li>{{ mobile.brand }} - {{mobile.model}} - {{ mobile.price }}m Tooman</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Monitors</h2>
+    <ul>
+        {% for monitor in monitors %}
+            <li>{{ monitor.brand }} - {{ monitor.model }} - {{ monitor.price }}m Tooman</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Laptops</h2>
+    <ul>
+        {% for laptop in laptops %}
+            <li>{{ laptop.brand }} - {{laptop.model}} - {{ laptop.price }}m Tooman</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
